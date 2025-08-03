@@ -4,7 +4,6 @@ package Array;
 public class RoatateArrayBasic {
 
     static void rotate_Once(int arr[]){
-
         //Store first array value in temp
         int temp=arr[0];
 
@@ -16,7 +15,7 @@ public class RoatateArrayBasic {
         arr[arr.length-1]=temp;
     }
 
-  static void rotate(int a[],int k){         //TC=O(N*k)
+  static void rotate(int[] a, int k){         //TC=O(N*k)
         k=k%a.length;
 
         //it means right rotate

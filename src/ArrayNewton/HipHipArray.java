@@ -1,5 +1,6 @@
 package ArrayNewton;
 
+//Que-->
 // Reverse the array
 //print sum of even indices after reversing
 //print product of odd indices after reversing

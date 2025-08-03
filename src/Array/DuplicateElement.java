@@ -6,13 +6,14 @@ import java.util.HashMap;
 
 public class DuplicateElement {
     public static void main(String[] args) {
-        int arr[]={0,0,1,1,1,2,2,4};
+        int[] arr ={0,0,1,1,1,2,2,4};
         int n=removeDuplicates(arr);
-//        System.out.println(removeDuplicates(arr));
+        System.out.println(n);
         System.out.println(Arrays.toString(arr));
+//        containsDuplicate(arr);
 
-//        int arr[]={1,2,3,5};
-//        System.out.println(containsDuplicate(arr));
+//        int nums[]={8,6,0,3,1,5,6,8};
+        System.out.println(containsDuplicate(arr));
 
     }
 
@@ -26,39 +27,27 @@ public class DuplicateElement {
             if (i < nums.length - 1 && nums[i] == nums[i + 1]) {
                 continue;
             }
-            // We will update the array in place
+            // We will update the array in place and count++
             nums[count] = nums[i];
             count++;
         }
-
         return count;
     }
 
-
-//        int arr[]={1,2,1,3,2,1,2};
-//        Arrays.sort(arr);
-//        int n=arr.length;
-//        for (int i = 0; i <n-1; i++) {
-//                if (arr[i]==arr[i+1]){
-//                    System.out.print(arr[i]);
-//                }
-//        }
-
-
-
+    // to check whether an array has duplicate elements or not
         static boolean containsDuplicate(int[] nums) {
             HashMap<Integer,Integer> hm=new HashMap<Integer,Integer>();
             for(int i=0;i<nums.length;i++){
                 if(hm.containsKey(nums[i])){
                     return true;
                 }
-            else
-            {
+                 else
+                    {
                 hm.put(nums[i],i);
+                    }
             }
-        }
         return false;
 
-    }
+         }
 
 }

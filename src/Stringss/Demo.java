@@ -4,9 +4,9 @@ public class Demo {
     public static void main(String[] args) {
 
 //        Strings= Array of characters
-//        char ch[]={'a','s','i','m','k','h','a','n'};
-//        String s2=new String(ch);
-//        System.out.println(s2);
+        char ch[]={'a','s','i','m','k','h','a','n'};
+        String s2=new String(ch);
+        System.out.println(s2);
 
 //        String s="asimkhan";
 //        String s1="asimkhan";
@@ -59,7 +59,7 @@ public class Demo {
 //        System.out.println(space.trim());
 
 
-//        QUE 1- Check a string "b"  is a subtring of "a";
+//    QUE 1- Check a string "b"  is a subtring of "a";
 //            String a="asimkhan";
 //            String b="kha";
 

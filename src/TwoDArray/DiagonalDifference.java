@@ -13,14 +13,14 @@ public class DiagonalDifference {
     }
     static  int diagonalDifference(int mat[][],int row,int col){
 
-        int dsum = 0;
+        int psum = 0;
         int ssum=0;
         for (int i = 0; i < row; i++) {
             for (int j = 0; j < row; j++) {  //col
 
                 // left diagonal when i==j
                 if(i==j) {
-                    dsum += mat[i][j];
+                    psum += mat[i][j];
                 }
 
                 //right diagonal when i+j==col-1||row-1
@@ -29,7 +29,7 @@ public class DiagonalDifference {
                 }
             }
         }
-        return  Math.abs(dsum-ssum);
+        return  Math.abs(psum-ssum);
 
         //TC=O(N*M);
         //SC=O(1);

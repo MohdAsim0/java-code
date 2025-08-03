@@ -23,7 +23,7 @@ public class ValidAngram {
             count_arr[s.charAt(i)-'a']++;
         }
 
-        //remove that count of alphabets of t
+        //remove that count of alphabets of t String
         for (int i = 0; i < n; i++) {
             count_arr[t.charAt(i)-'a']--;
         }

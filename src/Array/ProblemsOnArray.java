@@ -13,22 +13,22 @@ public class ProblemsOnArray {
     }
 
     // Calculate sum of all elements of an array
-    static void sumOfArrayElements(){
+    static void sumOfArrayElements() {
 
-        int sum=0; //variable to store the sum
-        int nums[]={1,2,3,4,5,6};//array given
+        int sum = 0; //variable to store the sum
+        int nums[] = {1, 2, 3, 4, 5, 6};//array given
 
-        for(int i=0;i<nums.length;i++){
-            sum= sum + nums[i];
+        for (int i = 0; i < nums.length; i++) {
+            sum = sum + nums[i];
         }
         System.out.println(sum);
     }
 
 
-    static void compareTwoArrays(){
+    static void compareTwoArrays() {
 
-        int []arr1={1,2,3};
-        int []arr2={1,2,3};
+        int[] arr1 = {1, 2, 3};
+        int[] arr2 = {1, 2, 3};
 
         // Checking if above two arrays are equal
         // using equals() method
@@ -40,8 +40,8 @@ public class ProblemsOnArray {
 
 
 //       How to Deeply Compare Array Contents?
-        Object inarr1[]= {arr1};
-        Object inarr2[]={arr2};
+        Object inarr1[] = {arr1};
+        Object inarr2[] = {arr2};
 
 //        if (Arrays.equals(inarr1, inarr2))
 //            System.out.println("same");
@@ -95,31 +95,27 @@ public class ProblemsOnArray {
     }
 
     //METHOD 4 RECURSION for max and min elements
-    static void minMaxOfArrayRecursive(){
-    int [] arr1={1,2,7,5,4,9};
-    int n=arr1.length;
-        System.out.println(getMax(arr1,0,n));
+    static void minMaxOfArrayRecursive() {
+        int[] arr1 = {1, 2, 7, 5, 4, 9};
+        int n = arr1.length;
+        System.out.println(getMax(arr1, 0, n));
     }
-    static int getMin(int arr[],int i, int n){
+
+    static int getMin(int arr[], int i, int n) {
         // If there is single element, return it.
         // Else return minimum of first element and
         //  remaining array element.
-        return (n==1)? arr[i] : Math.min(arr[i],getMin(arr,i+1,n-1));
-
-    }
-     static int getMax(int arr[],int i, int n){
-         // If there is single element, return it.
-         // Else return maximum of first element and
-         //  remaining array element.
-        return (n==1)? arr[i] : Math.max(arr[i],getMax(arr,i+1,n-1));
+        return (n == 1) ? arr[i] : Math.min(arr[i], getMin(arr, i + 1, n - 1));
 
     }
 
+    static int getMax(int arr[], int i, int n) {
+        // If there is single element, return it.
+        // Else return maximum of first element and
+        //  remaining array element.
+        return (n == 1) ? arr[i] : Math.max(arr[i], getMax(arr, i + 1, n - 1));
 
-
-
-
-
+    }
 
 
 }

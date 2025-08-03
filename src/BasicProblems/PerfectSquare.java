@@ -22,9 +22,5 @@ public class PerfectSquare {
         else
             System.out.println("Not a Perfect Square");
 
-
-
-
-
     }
 }

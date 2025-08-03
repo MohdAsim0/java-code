@@ -12,6 +12,7 @@ public class Palindrome {
 
     }
 
+
     //Bool method to check a string is palindrome or not
     static boolean isPalindrome(String str){
         int l=0;
@@ -23,7 +24,6 @@ public class Palindrome {
                  }
              l++;
              r--;
-
     }
 
         return true;

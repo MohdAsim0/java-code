@@ -12,7 +12,7 @@ public class Introduction {
         //declare and allocate memory in single line
 //        int[] datas = new int[10];
 
-        //Looping Through Array Elements
+
         // create an array
         int[] age = {12, 4, 5};
 

@@ -1,5 +1,9 @@
 package Array;
 //https://leetcode.com/problems/maximum-subarray/
+//The Intuition of the algorithm is not to consider the subarray as a part of the answer
+// if its sum is less than 0.
+// A subarray with a sum less than 0 will always reduce our answer and
+// so this type of subarray cannot be a part of the subarray with maximum sum.
 
 public class MaxSubarraySum {
     public static void main(String[] args) {
@@ -21,7 +25,7 @@ public class MaxSubarraySum {
                 sum += arr[i];
             }
 
-            //if sum is negative return that element
+            //if sum is negative return that element if only one element in the array is -ve
             if (sum < 0) {
                 sum = arr[i];
             }
@@ -55,7 +59,7 @@ public class MaxSubarraySum {
     }
 
     static void maxSubarray1(int arr[]){
-        //BETTER SOLUTION O(N^2) SC=O(1)
+        //BETTER SOLUTION O(N^2) SC=O(1)   PREFIX SUM BASED
         int max=Integer.MIN_VALUE;
         for (int i = 0; i < arr.length; i++) {
             int sum=0;

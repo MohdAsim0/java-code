@@ -42,6 +42,7 @@ public class Sort012 {
 
     }
 
+
     static void sort012(int nums[]){
 
         //Brute Force  //TC=O(2N) SC=O(1)

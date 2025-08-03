@@ -9,13 +9,11 @@ public class Revision {
     }
 
     static void maxOfArray(int arr[]){
-
         int res=arr[0];
         for(int i=1;i<arr.length;i++){
             res=Math.max(res,arr[i]);
         }
         System.out.println(res);
-
     }
 
     static void maxOfArray1(int arr[]){

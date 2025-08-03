@@ -43,7 +43,7 @@ public class SieveOfErathosthenes {
 
     //2 to 10 initially true
     //4,6,8,10 false after first iteration
-    //9 also false
+    //9 also false after second iteration
 
     //remain true
     //2,3,5,7

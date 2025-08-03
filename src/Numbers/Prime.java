@@ -36,6 +36,7 @@ public class Prime {
     //RUN loop equal to n/2  b/c --> any number is divisible by its half only not more than half
     //ex--> 6 has factor less than equal to 3
     // 12--> has factor less than or equal to 6
+
     static boolean isPrime2(int n){
         if (n<=1){
             return false;
@@ -67,9 +68,11 @@ public class Prime {
            return false;
     }
 
+
     static boolean isPrime3(int n){
         if (n<=1)
             return false;
+
         for (int i = 2; i*i<=n; i++) {
             if (n%i==0)
                 return false;

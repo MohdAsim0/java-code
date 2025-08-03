@@ -5,13 +5,13 @@ public class RotateArray2 {
         int nums[]={1,2,3,4,5,6,7};
         int k=3;
         int n=nums.length;
-        leftRotate(nums,3,n);
+        leftRotation(nums,3,n);
         printArray(nums,n);
 
 
     }
 
-    static void leftRotate(int arr[], int k, int n) {
+    static void leftRotation(int arr[], int k, int n) {
 
         //creating a temp array of size d
         int temp[] = new int[k];
